@@ -38,6 +38,10 @@ const Form1 = () => {
 
       <form className='formMain' onSubmit={handleForm}>
 
+      <button type='button' 
+      style={{position: 'relative', right: '10rem'}} 
+      onClick={() => navigate('/')}>Go back</button>
+
         <h2>Registration Form</h2>
         <br />
         <input

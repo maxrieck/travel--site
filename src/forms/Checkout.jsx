@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import FormContext from '../context/FormContext'
 import './Form.css'
+import { useNavigate } from 'react-router-dom'
 
 
 const Checkout = () => {
@@ -9,11 +10,17 @@ const Checkout = () => {
   
     const price = state.formData.perNight
     const nights = state.formData.dates?.length
+
+    const navigate = useNavigate()
     
   return (
     <div className='formBackground'>
-
+      
       <div className='checkout'>
+
+        <button type='button' 
+        style={{position: 'relative', right: '1rem', width:'7rem'}} 
+        onClick={() => navigate('/form3')}>Go back</button>
 
         <h3>Book your trip</h3>
         <p>Location: {state.formData.location}</p>
@@ -23,7 +30,7 @@ const Checkout = () => {
         <ul>
           {state.formData.dates.map((date, index) => (
             <li
-             key={index}>{date?.toString?.()}</li>
+             key={index}>{date.format('MM/DD/YYYY')}</li>
           ))}
         </ul>
         <p>Price per night: ${state.formData.perNight.toFixed(2)}</p>

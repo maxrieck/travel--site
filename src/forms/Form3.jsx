@@ -47,6 +47,10 @@ const Form3 = () => {
 
       <form className='formMain' onSubmit={handleForm}>
       
+      <button type='button' 
+      style={{position: 'relative', right: '10rem'}} 
+      onClick={() => navigate('/form2')}>Go back</button>
+
       <select name="location" id=""
         value={newLocation} onChange={e => setNewLocation(e.target.value)}
       >
@@ -77,6 +81,7 @@ const Form3 = () => {
       <button type='button' onClick={pricePerNight}>Check Price</button>
 
       <h3>${perNight.toFixed(2)}</h3>
+
 
       <button type='submit'>Next</button>
 

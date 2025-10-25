@@ -30,6 +30,9 @@ const Form2 = () => {
 
       <form onSubmit={handleForm} className='formMain' >
 
+      <button type='button' 
+      style={{position: 'relative', right: '10rem'}} 
+      onClick={() => navigate('/form1')}>Go back</button>
 
       <DatePicker
         multiple
@@ -43,7 +46,7 @@ const Form2 = () => {
 
          <ul>
           {dates.map((date, index) => (
-            <li key={index}>{date?.toString?.()}</li>
+            <li key={index}>{date.format('MM/DD/YYYY')}</li>
           ))}
          </ul>
          
