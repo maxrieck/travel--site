@@ -1,0 +1,70 @@
+
+.formBackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.403);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.formMain {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.53);
+    position: relative;
+    width: 70%;
+    height: 50%;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.formMain select,
+.formMain input {
+   width: 50%;
+   padding: 3px;
+   border-radius: 6px;
+   border: 3px solid rgb(125, 125, 125);
+}
+
+button {
+    padding: 0.5rem 1.5rem;
+    background-color: rgb(22, 119, 216);
+    border: 1px solid;
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;        
+}
+
+button:hover {
+    opacity: 0.92;
+}
+
+li {
+    list-style: none;
+    display: inline;
+    margin: 0.5rem
+}
+
+.checkout {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.53);
+    position: relative;
+    width: 50%;
+    height: 60%;
+    justify-content: center;
+    align-items: left;
+}
