@@ -3,6 +3,7 @@ import FormContext from '../context/FormContext'
 import { useNavigate } from 'react-router-dom';
 import DatePicker from 'react-multi-date-picker';
 import './Form.css'
+import CloseBtn from './CloseBtn';
 
 
 const Form2 = () => {
@@ -30,8 +31,10 @@ const Form2 = () => {
 
       <form onSubmit={handleForm} className='formMain' >
 
+        <CloseBtn />
+
       <button type='button' 
-      style={{position: 'relative', right: '10rem'}} 
+      className='backBtn' 
       onClick={() => navigate('/form1')}>Go back</button>
 
       <DatePicker

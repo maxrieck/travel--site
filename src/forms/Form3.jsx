@@ -3,6 +3,7 @@ import { useState, useContext, } from 'react'
 import { useNavigate } from 'react-router-dom';
 import FormContext from '../context/FormContext';
 import './Form.css'
+import CloseBtn from './CloseBtn';
 
 
 const Form3 = () => {
@@ -46,9 +47,11 @@ const Form3 = () => {
     <div className='formBackground'>
 
       <form className='formMain' onSubmit={handleForm}>
+
+        <CloseBtn />
       
       <button type='button' 
-      style={{position: 'relative', right: '10rem'}} 
+      className='backBtn'  
       onClick={() => navigate('/form2')}>Go back</button>
 
       <select name="location" id=""

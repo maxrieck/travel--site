@@ -68,3 +68,22 @@ li {
     justify-content: center;
     align-items: left;
 }
+
+.closeBtn {
+    background-color: white;
+    color: gray;
+    border: none;
+    font-size: 16px;
+    top: 0;
+    right: 0;
+    position: absolute;
+    margin: 1rem;
+}
+
+.backBtn {
+    top: 0;
+    left: 0;
+    position: absolute;
+    margin: 1rem;
+}
+

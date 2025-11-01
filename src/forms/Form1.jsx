@@ -2,6 +2,7 @@ import React, { useState, useContext } from 'react'
 import  FormContext from '../context/FormContext'
 import { useNavigate } from 'react-router-dom'
 import './Form.css'
+import CloseBtn from './CloseBtn'
 
 
 
@@ -38,9 +39,7 @@ const Form1 = () => {
 
       <form className='formMain' onSubmit={handleForm}>
 
-      <button type='button' 
-      style={{position: 'relative', right: '10rem'}} 
-      onClick={() => navigate('/')}>Go back</button>
+      <CloseBtn />
 
         <h2>Registration Form</h2>
         <br />
@@ -49,7 +48,7 @@ const Form1 = () => {
           onChange={e => setNewName(e.target.value)}
         />
 
-        <input
+        <input 
           type="email" value={newEmail} placeholder='Your Email'
           onChange={e => setNewEmail(e.target.value)}
         />

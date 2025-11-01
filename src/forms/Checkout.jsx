@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import FormContext from '../context/FormContext'
 import './Form.css'
 import { useNavigate } from 'react-router-dom'
+import CloseBtn from './CloseBtn';
 
 
 const Checkout = () => {
@@ -17,9 +18,10 @@ const Checkout = () => {
     <div className='formBackground'>
       
       <div className='checkout'>
+        <CloseBtn />
 
         <button type='button' 
-        style={{position: 'relative', right: '1rem', width:'7rem'}} 
+        className='backBtn' 
         onClick={() => navigate('/form3')}>Go back</button>
 
         <h3>Book your trip</h3>

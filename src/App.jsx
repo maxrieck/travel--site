@@ -8,7 +8,7 @@ import Form3 from './forms/Form3'
 import Form4 from './forms/Form4'
 import Navbar from './navbar/Navbar'
 import Checkout from './forms/Checkout'
-import Test from './Test'
+// import Test from './Test'
 
 
 function App() {
@@ -26,7 +26,7 @@ function App() {
           <Route path='/form4' element={<Form4 />}/>
           <Route path='/checkout' element={<Checkout />} />
         </Routes>
-        <Test />
+        {/* <Test /> */}
       </FormProvider>
     </>
   )

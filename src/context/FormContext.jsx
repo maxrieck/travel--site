@@ -11,7 +11,9 @@ const initialState = {
         room: '',
         perNight: 0,
 
-    }
+    },
+
+    prevPath: '/',
 };
 
 
@@ -34,8 +36,15 @@ const formReducer = (state, action) => {
                 }
             };
 
+        case 'SET_PATH':
+            return {
+                ...state,
+                prevPath: action.payload
+            }
+
         case 'DELETE_ORDER':
             return state;
+
             
         default:
             return state;
